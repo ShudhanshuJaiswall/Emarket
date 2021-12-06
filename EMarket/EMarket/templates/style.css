@@ -1,0 +1,13 @@
+.logo{
+    font-size: 300px;
+    color:white;
+        text-align:center;
+        
+        margin-top: 200px;
+}
+.body{
+    background-color: rgb(23, 10, 54);
+    border:2px solid rgba(15, 14, 14, 0.897);
+    width: device-width;
+    height:  device-width;
+}

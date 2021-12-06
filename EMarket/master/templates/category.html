@@ -1,0 +1,49 @@
+{% include 'blocks/adminheader.html' %}
+
+
+<div class="contactus">
+    <div class="container-fluid">
+             <div class="row">
+                <div class="col-md-8 offset-md-2">
+                   <div class="title">
+                      <h2>Category</h2>                     
+                   </div>
+                </div>
+             </div>
+           </div>
+ </div>
+
+ <div class="contact">
+    <div class="container-fluid padddd">
+      
+       <div class="row">
+          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
+          <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 padddd">
+           <form class="main_form" action="/master/category" method="POST">
+              {%csrf_token%}
+              <div class="row">                
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <input class="form-control" placeholder="Category Name" type="text" name="cname" required>
+                 </div>                  
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <button class="send">Save</button>
+                 </div>
+              </div>
+           </form>
+          </div> 
+          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
+       </div>
+       <hr>
+
+       <table class='table'>
+            <tr>
+                <th>S. No.</th>
+                <th>Category Name</th>
+                <th>Operations</th>
+            </tr>
+       </table>
+
+    </div>
+ </div>
+
+{% include 'blocks/footer.html' %}
